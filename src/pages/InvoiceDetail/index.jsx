@@ -30,6 +30,8 @@ const InvoiceDetail = () => {
       total_amount: amount,
     };
     const newData = [...rows, payload];
+    localStorage.setItem("data", JSON.stringify(newData));
+
     console.log("newer", newData);
     console.log(itemName, quantity, price, amount, id);
   };
